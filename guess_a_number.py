@@ -49,6 +49,6 @@ while game_on is True:
         if answer == "Yes":
             game_on = True
         elif answer == "No":
-            print("Game over. Shutting down.")
+            print("Game over, noob. Shutting down.")
             break
 
