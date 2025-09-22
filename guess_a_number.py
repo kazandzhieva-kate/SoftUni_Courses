@@ -1,7 +1,5 @@
 import random
 
-
-
 def play_game():
     computer_number = random.randint(1, 100)
     print("Hello, dear friend! Want to play a game?")
@@ -24,10 +22,9 @@ def play_game():
     while number_of_tries_left > 0:
         player_input = input("Gimme a number:")
 
-        if player_input == "End":
-            game_on = False
-            print("Game severed manually. Try again?")
-            break
+        if player_input.strip().lower() == "end":
+            print("Game severed manually.")
+            return None
 
         if not player_input.isdigit():
             print("Sorry, lad, wrong kinda input. Try again?")
